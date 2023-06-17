@@ -13,7 +13,7 @@ class RolesEmpleadoSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('_empleado')->insert([
+        DB::table('_roles')->insert([
             ['id_empleado' => 1, 'rol' => 'Gerente', 'id_area' => 1],
             ['id_empleado' => 2, 'rol' => 'Gerente', 'id_area' => 2],
             ['id_empleado' => 3, 'rol' => 'Gerente', 'id_area' => 3],
