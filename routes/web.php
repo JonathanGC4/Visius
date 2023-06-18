@@ -19,4 +19,7 @@ Route::get('/', function () {
 });
 
 //Ruta para mostrar area
-Route::get('/Area/show', [areaController::class, 'index']);
+Route::resource('Area', AreaController::class);
+
+Route::get('/areas/{area}/edit', [AreaController::class, 'edit'])->name('areas.edit');
+
